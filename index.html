@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://i.pinimg.com/736x/c2/10/09/c210090b243f77183ad18c7a42b274f4.jpg);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ff758c;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff758c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #e65c5c;
+        }
+        .toggle {
+            margin-top: 15px;
+            color: #555;
+        }
+        .toggle a {
+            color: #ff758c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Email or Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="handleLogin()">Login</button>
+        <p class="toggle">Don't have an account? <a href="#" onclick="toggleForm()">Sign up</a></p>
+    </div>
+    
+    <div class="container" id="signup-box" style="display: none;">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button>Sign Up</button>
+        <p class="toggle">Already have an account? <a href="" onclick="toggleForm()">Login</a></p>
+    </div>
+
+    <script>
+        // Function to toggle between login and signup forms
+        function toggleForm() {
+            document.getElementById('login-box').style.display = 
+                document.getElementById('login-box').style.display === 'none' ? 'block' : 'none';
+            document.getElementById('signup-box').style.display = 
+                document.getElementById('signup-box').style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to handle login
+        function handleLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Basic validation
+            if (!username || !password) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Simulate login logic
+            console.log('Logging in with:', username, password);
+            alert('Login successful! Redirecting to homepage...');
+
+            // Redirect to another page (e.g., homepage)
+            window.location.href = "HOME_PAGE.html"; // Replace with your desired page
+        }
+    </script>
+</body>
+</html>
