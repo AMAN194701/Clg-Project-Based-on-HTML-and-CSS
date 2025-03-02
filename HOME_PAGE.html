@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #f8f9fa;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #d2a679; /* Light brown color on hover */
+        }
+        .navbar h2 {
+            font-size: 24px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between logo and text */
+        }
+
+        /* Logo Styles */
+        .navbar h2 img {
+            height: 40px; /* Adjust logo size */
+            width: auto;
+        }
+
+        /* Search Box */
+        .search-box {
+            flex: 1;
+            margin: 0 20px;
+            max-width: 400px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px; /* Rounded corners */
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-box input:focus {
+            border-color: #d2a679; /* Light brown border on focus */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #f8d7da, #ffb88c); /* Previous gradient */
+            color: black;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #d2a679; /* Light brown color */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .hero .btn:hover {
+            background: #b38b5e; /* Darker brown on hover */
+            transform: translateY(-3px);
+        }
+
+        /* Catalog Section */
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .catalog-item {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .catalog-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .catalog-item:hover {
+            transform: scale(1.05);
+            background: #d2a679; /* Light brown color */
+        }
+        .catalog-item a {
+            display: block;
+            background: #d2a679; /* Light brown color */
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .catalog-item a:hover {
+            background: #b38b5e; /* Darker brown on hover */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .footer a {
+            color: #ffb88c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>
+            <img src="https://i.pinimg.com/736x/6a/da/da/6adadab5450c22e4996de4dd0a6e0bf9.jpg" alt="shopEase Logo"> <!-- Placeholder logo -->
+            ShopEase
+        </h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+        </div>
+        <div>
+            <a href="HOME_PAGE.html" id="homeLink">Home</a>
+            <a href="about.html" id="aboutLink">About</a>
+            <a href="contact.html" id="contactLink">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Explore our wide range of products and find the best deals!</p>
+        <a href="#catalog" class="btn">Explore Now</a>
+    </div>
+
+    <!-- Catalog Section -->
+    <div class="catalog" id="catalog">
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/29/b1/3b/29b13b89090be6c71ffa1befaa942269.jpg" alt="Electronics">
+            <h3>Electronics</h3>
+            <a href="1per_electronics.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/ec/ed/c8/ecedc8606c98f9cd029392418bed1317.jpg" alt="Fashion">
+            <h3>Fashion</h3>
+            <a href="2fashion.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/8e/5c/14/8e5c14b59bd694d9001aa85606605906.jpg" alt="Home Appliances">
+            <h3>Home Appliances</h3>
+            <a href="3home_appl.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/2a/e6/df/2ae6dfe9b1a89b4961703fe6392e4df9.jpg" alt="Beauty & Personal Care">
+            <h3>Beauty & Personal Care</h3>
+            <a href="4beauty.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/2d/1b/44/2d1b448fdf9b55198892bea133cb685e.jpg" alt="Sports & Fitness">
+            <h3>Sports & Fitness</h3>
+            <a href="5sports.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/12/2a/4c/122a4c9856f9179516e8fb54d60f8799.jpg" alt="Books">
+            <h3>Books</h3>
+            <a href="6books.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/d5/5e/1b/d55e1be81815be6031f55e5dcc38898c.jpg" alt="Groceries">
+            <h3>Groceries</h3>
+            <a href="8gloceries.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/91/d6/75/91d675fc4c48615499f6c348920f9f98.jpg" alt="Toys & Games">
+            <h3>Toys & Games</h3>
+            <a href="7toys.html">View Products</a>
+        </div>
+        <div class="catalog-item">
+            <img src="https://i.pinimg.com/736x/5b/a2/00/5ba2006ca9e5af3fd5798574d9002f9d.jpg" alt="Furniture">
+            <h3>Furniture</h3>
+            <a href="9furniture.html">View Products</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+        <p>
+            <a href="Customer_care.html">Customer support</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="#top">Back to Top</a>
+        </p>
+    </div>
+</body>
+</html>
