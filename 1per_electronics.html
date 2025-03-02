@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Electronics</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a7bd5, #3a6073);
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff9900;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff9900;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>ShopEase</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; margin-top:20px; color: white;">Electronics</h1>
+    
+    <div class="catalog">
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/40/86/88/4086884ce95f225512d82a69a326c92a.jpg" alt="Laptop">
+            <h3>MacBook Air M2</h3>
+            <p>$1999</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/6a/c1/51/6ac151c37ea5c867888c51e9c889cc3c.jpg" alt="Smartphone">
+            <h3>iPhone 15</h3>
+            <p>$799</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/4a/d8/ad/4ad8ad9edf0231341ee4bec3ff7cb414.jpg" alt="Headphones">
+            <h3>Air Pod Max</h3>
+            <p>$549</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

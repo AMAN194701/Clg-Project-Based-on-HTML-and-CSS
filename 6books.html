@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Books</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #B0E0E6, #4682B4); /* Updated background color */
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #8B5A2B; /* Light brown color on hover */
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background: #D2B48C; /* Light brown color on hover */
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e85c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>ShopEase</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; margin-top:20px; color: white;">Books</h1>
+    
+    <div class="catalog">
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/82/73/fb/8273fb3f99dd3e4b84a98c7beeb89383.jpg" alt="Book 1">
+            <h3>Bhagavad Gita</h3>
+            <p>$30</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://img.discountmags.com/https%3A%2F%2Fimg.discountmags.com%2Fproducts%2Fextras%2F61329-the-sherlock-holmes-book-cover-2016-october-31-issue.jpg%3Fbg%3DFFF%26fit%3Dscale%26h%3D1019%26mark%3DaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2pzcy1hc3NldHMvaW1hZ2VzL2RpZ2l0YWwtZnJhbWUtdjIzLnBuZw%253D%253D%26markpad%3D-40%26pad%3D40%26w%3D775%26s%3D277c4a0e55ecf40411583ee3111b3599?auto=format%2Ccompress&cs=strip&h=1018&w=774&s=957f6ed4b9cfabf0375f4926f2f02277" alt="Book 2">
+            <h3>The Sherlock Holmes Book </h3>
+            <p>$12</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/6a/b9/33/6ab933eb1e0e5a5681f79247cdfead45.jpg" alt="Book 3">
+            <h3>Harry Potter Series</h3>
+            <p>$40</p>
+            <div class="buttons">
+                <a href="#" class="btn">Add to Cart</a>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
