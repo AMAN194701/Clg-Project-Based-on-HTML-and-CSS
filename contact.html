@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #232f3e;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff9900; /* Orange color on hover */
+        }
+        .navbar h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between logo and text */
+        }
+        .navbar h2 img {
+            height: 40px; /* Adjust logo size */
+            width: 40px; /* Ensure width and height are equal for a perfect circle */
+            border-radius: 50%; /* Make the logo circular */
+            object-fit: cover; /* Ensures the image fits well */
+        }
+
+        /* Container Styles */
+        .about-container, .contact-container, .faq-container, .feedback-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .about-container:hover, .contact-container:hover, .faq-container:hover, .feedback-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 36px;
+            color: #232f3e;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraphs */
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            text-align: left;
+        }
+        .faq-container p {
+            margin: 15px 0;
+        }
+        .faq-container strong {
+            color: #232f3e;
+        }
+
+        /* Feedback Section */
+        .feedback-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        .feedback-container button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .feedback-container button:hover {
+            background: #e65c5c;
+        }
+        .feedback-message {
+            margin-top: 10px;
+            color: #4CAF50; /* Green color for success message */
+            font-weight: bold;
+            display: none; /* Hidden by default */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #232f3e;
+            color: white;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #ffb88c;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #ff9900;
+        }
+
+        /* Map */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>
+            <img src="https://i.pinimg.com/736x/6a/da/da/6adadab5450c22e4996de4dd0a6e0bf9.jpg" alt="ShopEase Logo"> <!-- Logo added here -->
+            ShopEase
+        </h2>
+        <div>
+            <a href="HOME_PAGE.html">Home</a>
+            <a href="HOME_PAGE.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a> <!-- Updated to point to the Contact section -->
+            <a href="#faq">FAQ</a> <!-- Updated to point to the FAQ section -->
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-container">
+        <h1>About ShopEase</h1>
+        <p>Welcome to ShopEase, your number one destination for all things shopping. We are dedicated to giving you the very best of products, with a focus on quality, affordability, and customer satisfaction.</p>
+        <p>Founded in 2025, ShopEase has come a long way from its beginnings. Our passion for providing the best products drove us to start this online store, so that we can offer you the best shopping experience from the comfort of your home.</p>
+        <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container" id="contact"> <!-- Added id="contact" -->
+        <h1>Contact Us</h1>
+        <p>Email: support@shopease.com</p>
+        <p>Phone: +91 8857942554</p>
+        <p>Address: PARUL UNIVERSITY Limda, Tal. Waghodia, Vadodara District, Gujarat 391760</p>
+        <p>Feel free to reach out to us for any inquiries or assistance.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7173110001017!2d73.36084011136712!3d22.28869577961028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1740887638176!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-container" id="faq"> <!-- Added id="faq" -->
+        <h1>Frequently Asked Questions</h1>
+        <p><strong>Q: How can I track my order?</strong></p>
+        <p>A: You can track your order by logging into your account and checking the "Order Status" page.</p>
+        <p><strong>Q: What is your return policy?</strong></p>
+        <p>A: We accept returns within 30 days of purchase. Please ensure the product is in its original condition.</p>
+        <p><strong>Q: How do I contact customer service?</strong></p>
+        <p>A: You can contact us via email at support@shopease.com or call us at +1 (234) 567-890.</p>
+        <p><strong>Q: Do you offer international shipping?</strong></p>
+        <p>A: Yes, we ship to most countries worldwide. Shipping costs and delivery times may vary.</p>
+        <p><strong>Q: What payment methods do you accept?</strong></p>
+        <p>A: We accept credit/debit cards, PayPal, and other popular payment methods.</p>
+        <p><strong>Q: How can I cancel my order?</strong></p>
+        <p>A: You can cancel your order before it is shipped by contacting our customer support team.</p>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback-container">
+        <h1>Feedback</h1>
+        <p>We value your feedback! Please leave your comments below:</p>
+        <textarea id="feedbackText" rows="5" placeholder="Enter your feedback..."></textarea>
+        <br>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+        <div id="feedbackMessage" class="feedback-message">Thank you for your valuable feedback!</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+        <p>
+            <a href="#contact">Connect with Us</a> | <!-- Updated to point to the Contact section -->
+            <a href="#">Contact Us</a> |
+            <a href="#top">Back to Top</a>
+        </p>
+    </div>
+
+    <script>
+        // Function to handle feedback submission
+        function submitFeedback() {
+            const feedbackText = document.getElementById('feedbackText');
+            const feedbackMessage = document.getElementById('feedbackMessage');
+
+            // Clear the textarea
+            feedbackText.value = '';
+
+            // Show the thank you message
+            feedbackMessage.style.display = 'block';
+
+            // Hide the message after 3 seconds
+            setTimeout(() => {
+                feedbackMessage.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
